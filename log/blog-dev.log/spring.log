@@ -1454,3 +1454,23 @@ org.attoparser.ParseException: (Line = 599, Column = 52) Malformed markup: Attri
 2021-10-19 21:58:16.654  INFO 12372 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Request:RequestLog{url='/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.blog', args=[]}
 2021-10-19 21:58:16.654  INFO 12372 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Result: {}blog
 2021-10-19 21:58:16.654  INFO 12372 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : ------doAfter---------
+2021-10-19 22:33:40.108  INFO 10616 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_301 on USER-20211017ZE with PID 10616 (D:\ideaProject\blog\target\classes started by Administrator in D:\ideaProject\blog)
+2021-10-19 22:33:40.111 DEBUG 10616 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-19 22:33:40.112  INFO 10616 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-19 22:33:40.171  INFO 10616 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-19 22:33:40.171  INFO 10616 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-19 22:33:41.341  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-19 22:33:41.348  INFO 10616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-19 22:33:41.348  INFO 10616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-19 22:33:41.408  INFO 10616 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-19 22:33:41.409  INFO 10616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1237 ms
+2021-10-19 22:33:41.793  INFO 10616 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-19 22:33:41.996  INFO 10616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-19 22:33:42.101  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-19 22:33:42.111  INFO 10616 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 2.716 seconds (JVM running for 3.615)
+2021-10-19 22:33:56.120  INFO 10616 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-19 22:33:56.120  INFO 10616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-19 22:33:56.122  INFO 10616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-10-19 22:33:56.144  INFO 10616 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request:RequestLog{url='/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.blog', args=[]}
+2021-10-19 22:33:56.152  INFO 10616 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result: {}blog
+2021-10-19 22:33:56.152  INFO 10616 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : ------doAfter---------
