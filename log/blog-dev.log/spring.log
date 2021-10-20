@@ -1474,3 +1474,350 @@ org.attoparser.ParseException: (Line = 599, Column = 52) Malformed markup: Attri
 2021-10-19 22:33:56.144  INFO 10616 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request:RequestLog{url='/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.blog', args=[]}
 2021-10-19 22:33:56.152  INFO 10616 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result: {}blog
 2021-10-19 22:33:56.152  INFO 10616 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : ------doAfter---------
+2021-10-20 15:10:04.626  INFO 1216 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 1216 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 15:10:04.632 DEBUG 1216 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 15:10:04.632  INFO 1216 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 15:10:04.744  INFO 1216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-20 15:10:04.747  INFO 1216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-20 15:10:08.566  INFO 1216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 15:10:08.587  INFO 1216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-20 15:10:08.588  INFO 1216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-20 15:10:08.843  INFO 1216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-20 15:10:08.843  INFO 1216 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4094 ms
+2021-10-20 15:10:11.670  INFO 1216 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 15:10:12.544  INFO 1216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 15:10:12.667  INFO 1216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 15:10:12.695  INFO 1216 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 9.359 seconds (JVM running for 13.623)
+2021-10-20 15:11:49.297  INFO 1216 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-20 15:11:49.297  INFO 1216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-20 15:11:49.300  INFO 1216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-10-20 15:11:49.328  INFO 1216 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request:RequestLog{url='/', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.index', args=[]}
+2021-10-20 15:11:49.342  INFO 1216 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result: {}index
+2021-10-20 15:11:49.342  INFO 1216 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : ------doAfter---------
+2021-10-20 15:13:46.944  INFO 1216 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Request:RequestLog{url='/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.lrm.web.IndexController.blog', args=[]}
+2021-10-20 15:13:46.945  INFO 1216 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Result: {}blog
+2021-10-20 15:13:46.945  INFO 1216 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : ------doAfter---------
+2021-10-20 16:42:08.148  INFO 14040 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 14040 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 16:42:08.153 DEBUG 14040 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 16:42:08.154  INFO 14040 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 16:42:08.261  INFO 14040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-20 16:42:08.263  INFO 14040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-20 16:42:10.571  INFO 14040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 16:42:10.587  INFO 14040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-20 16:42:10.588  INFO 14040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-20 16:42:10.712  INFO 14040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-20 16:42:10.713  INFO 14040 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2442 ms
+2021-10-20 16:42:11.360  INFO 14040 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 16:42:11.725  INFO 14040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 16:42:11.773  INFO 14040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 16:42:11.788  INFO 14040 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 4.836 seconds (JVM running for 8.058)
+2021-10-20 16:43:47.096  INFO 14040 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 14040 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 16:43:47.096 DEBUG 14040 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 16:43:47.096  INFO 14040 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 16:43:47.796  INFO 14040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 16:43:47.797  INFO 14040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-20 16:43:47.798  INFO 14040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-20 16:43:47.894  INFO 14040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-20 16:43:47.895  INFO 14040 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2021-10-20 16:43:48.016  INFO 14040 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 16:43:48.104  INFO 14040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 16:43:48.126  INFO 14040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 16:43:48.133  INFO 14040 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 1.102 seconds (JVM running for 104.403)
+2021-10-20 16:43:48.136  INFO 14040 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-20 16:43:52.012  INFO 14040 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 14040 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 16:43:52.013 DEBUG 14040 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 16:43:52.013  INFO 14040 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 16:43:52.597  INFO 14040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 16:43:52.626  INFO 14040 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
+2021-10-20 16:43:56.155  INFO 14040 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 16:43:56.801  INFO 14040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 16:43:56.834  INFO 14040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 16:43:56.840  INFO 14040 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 4.879 seconds (JVM running for 113.109)
+2021-10-20 16:43:56.842  INFO 14040 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-20 16:44:11.655  INFO 5740 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 5740 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 16:44:11.658 DEBUG 5740 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 16:44:11.659  INFO 5740 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 16:44:11.726  INFO 5740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-20 16:44:11.727  INFO 5740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-20 16:44:14.197  INFO 5740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 16:44:14.212  INFO 5740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-20 16:44:14.213  INFO 5740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-20 16:44:14.327  INFO 5740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-20 16:44:14.327  INFO 5740 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2599 ms
+2021-10-20 16:44:15.056  INFO 5740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 16:44:15.382  INFO 5740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 16:44:15.425  INFO 5740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 16:44:15.439  INFO 5740 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 4.593 seconds (JVM running for 7.384)
+2021-10-20 16:47:12.148  INFO 5740 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 5740 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 16:47:12.148 DEBUG 5740 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 16:47:12.148  INFO 5740 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 16:47:12.941  INFO 5740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 16:47:12.947  INFO 5740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-20 16:47:12.964  INFO 5740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-20 16:47:13.057  INFO 5740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-20 16:47:13.058  INFO 5740 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 904 ms
+2021-10-20 16:47:13.177  INFO 5740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 16:47:13.271  INFO 5740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 16:47:13.295  INFO 5740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 16:47:13.313  INFO 5740 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 1.221 seconds (JVM running for 185.258)
+2021-10-20 16:47:13.315  INFO 5740 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-10-20 16:47:18.908  INFO 5740 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 5740 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 16:47:18.909 DEBUG 5740 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 16:47:18.910  INFO 5740 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 16:47:19.816  INFO 5740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-20 16:47:19.897  INFO 5740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 JPA repository interfaces.
+2021-10-20 16:47:20.811  INFO 5740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 16:47:20.812  INFO 5740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-20 16:47:20.813  INFO 5740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-20 16:47:20.855  INFO 5740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-20 16:47:20.856  INFO 5740 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1942 ms
+2021-10-20 16:47:21.366  INFO 5740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-20 16:47:21.469  INFO 5740 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-20 16:47:21.768  INFO 5740 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-20 16:47:22.032  INFO 5740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-20 16:47:22.034  WARN 5740 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-10-20 16:47:24.054  INFO 5740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-20 16:47:24.192  INFO 5740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-10-20 16:47:27.417  INFO 5740 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-20 16:47:27.435  INFO 5740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-20 16:47:27.532  WARN 5740 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-20 16:47:27.976  INFO 5740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 16:47:28.378  INFO 5740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 16:47:28.410  INFO 5740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 16:47:28.416  INFO 5740 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 9.87 seconds (JVM running for 200.36)
+2021-10-20 16:47:28.425  INFO 5740 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   DataSourceAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceInitializationConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceJmxConfiguration matched:
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   DataSourceJmxConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.HikariPoolDataSourceMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   DevToolsDataSourceAutoConfiguration matched:
+      - Devtools devtools enabled. (OnEnabledDevToolsCondition)
+      - DevTools DataSource Condition found auto-configured DataSource (DevToolsDataSourceAutoConfiguration.DevToolsDataSourceCondition)
+
+   DevToolsDataSourceAutoConfiguration.DatabaseShutdownExecutorEntityManagerFactoryDependsOnPostProcessor matched:
+      - @ConditionalOnClass found required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.orm.jpa.AbstractEntityManagerFactoryBean; SearchStrategy: all) found bean '&entityManagerFactory' (OnBeanCondition)
+
+   HibernateJpaConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jdbc.core.JdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean,javax.persistence.EntityManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactoryBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#jpaVendorAdapter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.JpaVendorAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#transactionManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+      - @ConditionalOnProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NamedParameterJdbcTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.JdbcTemplate; SearchStrategy: all) found a primary bean from beans 'jdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found bean 'transactionManager'; @ConditionalOnMissingBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found a primary bean from beans 'transactionManager' (OnBeanCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration#transactionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.support.TransactionOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
+      Did not match:
+         - EmbeddedDataSource spring.datasource.url is set (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
+
+   DataSourceConfiguration.Dbcp2:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourceConfiguration.Generic:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (OnPropertyCondition)
+
+   DataSourceConfiguration.OracleUcp:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSourceImpl', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourceConfiguration.Tomcat:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceInitializationConfiguration.InitializationSpecificCredentialsDataSourceInitializationConfiguration:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on DataSourceInitializationConfiguration.InitializationSpecificCredentialsDataSourceInitializationConfiguration.DifferentCredentialsCondition.DataCredentials @ConditionalOnProperty (spring.datasource.data-username) did not find property 'data-username'; NestedCondition on DataSourceInitializationConfiguration.InitializationSpecificCredentialsDataSourceInitializationConfiguration.DifferentCredentialsCondition.SchemaCredentials @ConditionalOnProperty (spring.datasource.schema-username) did not find property 'schema-username' (DataSourceInitializationConfiguration.InitializationSpecificCredentialsDataSourceInitializationConfiguration.DifferentCredentialsCondition)
+
+   DataSourceInitializationConfiguration.SharedCredentialsDataSourceInitializationConfiguration:
+      Did not match:
+         - DataSource Initialization did not find configured properties spring.datasource.data-username, spring.datasource.schema-password, spring.datasource.schema[0], spring.datasource.data[0], spring.datasource.data, spring.datasource.schema-username, spring.datasource.data-password, spring.datasource.initialization-mode, spring.datasource.schema, spring.datasource.sql-script-encoding, spring.datasource.separator, spring.datasource.platform, spring.datasource.continue-on-error (DataSourceInitializationConfiguration.SharedCredentialsDataSourceInitializationConfiguration.DataSourceInitializationCondition)
+
+   DataSourceJmxConfiguration.TomcatDataSourceJmxConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSourceProxy' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.CommonsDbcp2PoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.OracleUcpPoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSource', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration#transactionManager:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found beans of type 'org.springframework.transaction.TransactionManager' transactionManager (OnBeanCondition)
+
+   JpaRepositoriesAutoConfiguration#entityManagerFactoryBootstrapExecutorCustomizer:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.LazyBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=lazy) did not find property 'bootstrap-mode'; NestedCondition on JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.DeferredBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=deferred) did not find property 'bootstrap-mode' (JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2021-10-20 16:47:28.968  INFO 5740 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-20 16:47:28.974  INFO 5740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-20 16:47:28.997  INFO 5740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-20 16:47:40.150  INFO 14276 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 14276 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 16:47:40.153 DEBUG 14276 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 16:47:40.155  INFO 14276 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 16:47:40.240  INFO 14276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-20 16:47:40.240  INFO 14276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-20 16:47:41.507  INFO 14276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-20 16:47:41.532  INFO 14276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2021-10-20 16:47:42.651  INFO 14276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 16:47:42.665  INFO 14276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-20 16:47:42.668  INFO 14276 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-20 16:47:42.784  INFO 14276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-20 16:47:42.785  INFO 14276 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2542 ms
+2021-10-20 16:47:43.123  INFO 14276 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-20 16:47:43.185  INFO 14276 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-20 16:47:43.408  INFO 14276 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-20 16:47:43.536  INFO 14276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-20 16:47:43.537  WARN 14276 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-10-20 16:47:43.978  INFO 14276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-20 16:47:44.002  INFO 14276 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-10-20 16:47:44.983  INFO 14276 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-20 16:47:44.994  INFO 14276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-20 16:47:45.131  WARN 14276 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-20 16:47:45.610  INFO 14276 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 16:47:46.012  INFO 14276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 16:47:46.060  INFO 14276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 16:47:46.074  INFO 14276 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 7.087 seconds (JVM running for 9.454)
+2021-10-20 16:48:14.468  INFO 14276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-20 16:48:14.471  INFO 14276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-20 16:48:14.479  INFO 14276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-20 16:48:20.832  INFO 15736 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 15736 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 16:48:20.840 DEBUG 15736 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 16:48:20.840  INFO 15736 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 16:48:20.938  INFO 15736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-20 16:48:20.939  INFO 15736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-20 16:48:22.468  INFO 15736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 16:48:22.476  INFO 15736 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-20 16:48:22.477  INFO 15736 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-20 16:48:22.574  INFO 15736 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-20 16:48:22.574  INFO 15736 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1634 ms
+2021-10-20 16:48:23.101  INFO 15736 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 16:48:23.389  INFO 15736 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 16:48:23.430  INFO 15736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 16:48:23.450  INFO 15736 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 3.475 seconds (JVM running for 5.159)
+2021-10-20 16:48:42.248  INFO 10472 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication using Java 1.8.0_302 on DESKTOP-01JDKPA with PID 10472 (E:\myproject\vueblog\blogServer\target\classes started by matech in E:\myproject\vueblog\blogServer)
+2021-10-20 16:48:42.255 DEBUG 10472 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-20 16:48:42.255  INFO 10472 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-10-20 16:48:42.324  INFO 10472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-20 16:48:42.325  INFO 10472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-20 16:48:43.222  INFO 10472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-20 16:48:43.246  INFO 10472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-10-20 16:48:44.243  INFO 10472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-20 16:48:44.260  INFO 10472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-20 16:48:44.260  INFO 10472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-10-20 16:48:44.369  INFO 10472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-20 16:48:44.369  INFO 10472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2042 ms
+2021-10-20 16:48:44.624  INFO 10472 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-20 16:48:44.669  INFO 10472 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-20 16:48:44.879  INFO 10472 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-20 16:48:44.972  INFO 10472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-20 16:48:44.974  WARN 10472 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-10-20 16:48:45.300  INFO 10472 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-20 16:48:45.319  INFO 10472 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-10-20 16:48:46.701  INFO 10472 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-20 16:48:46.711  INFO 10472 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-20 16:48:46.828  WARN 10472 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-20 16:48:47.218  INFO 10472 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-20 16:48:47.598  INFO 10472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-20 16:48:47.648  INFO 10472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-20 16:48:47.659  INFO 10472 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 6.338 seconds (JVM running for 8.008)
+2021-10-20 16:52:33.039  INFO 10472 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-20 16:52:33.051  INFO 10472 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-20 16:52:33.077  INFO 10472 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
