@@ -19,4 +19,9 @@ public class IndexController {
         System.out.println("-----------blog-----------");
         return "blog";
     }
+
+    @GetMapping("/index")
+    public String login(){
+        return "admin/index";
+    }
 }
