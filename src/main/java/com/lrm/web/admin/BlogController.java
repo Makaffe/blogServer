@@ -12,4 +12,5 @@ public class BlogController {
     public String list(){
         return "admin/blogs";
     }
+
 }
