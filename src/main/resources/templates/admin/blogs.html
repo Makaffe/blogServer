@@ -84,16 +84,18 @@
                     <th>标题</th>
                     <th>类型</th>
                     <th>推荐</th>
+                    <th>是否发布</th>
                     <th>更新时间</th>
                     <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr th:each="blog,iterStat : ${page.content}">
-                    <td th:text="${iterStat}">1</td>
+                    <td th:text="${iterStat.count}">1</td>
                     <td th:text="${blog.title}">可以练习清单</td>
                     <td th:text="${blog.type.name}">认知升级</td>
                     <td th:text="${blog.recommend}?'是':'否'">是</td>
+                    <td th:text="${blog.published}?'草稿':'发布'">草稿</td>
                     <td th:text="${blog.updateTime}">2021-10-13 22:52</td>
                     <td>
                         <a href="#" th:href="@{/admin/blogs{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
@@ -103,8 +105,8 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                    <th colspan="6">
-                        <a href="#" class="ui mini left teal floated basic button">新增</a>
+                    <th colspan="7">
+                        <a href="#" th:href="@{/admin/blogs/input}" class="ui mini left teal floated basic button">新增</a>
                         <div class="ui right floated pagination mini menu" th:if="${page.totalPages}>1">
                             <a href="#" onclick="page(this)" th:attr="data-page=${page.number}-1" th:unless="${page.first}" class="icon item">
                                 <i class="left chevron icon"></i>
@@ -119,6 +121,12 @@
                 </tr>
                 </tfoot>
             </table>
+
+            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">提示</div>
+                <p th:text="${message}">恭喜，操作成功！</p>
+            </div>
         </div>
     </div>
 </div>
@@ -173,6 +181,12 @@
             on: 'hover'
         }
     );
+    $('.message .close').on('click',function(){
+        $(this)
+            .closest('.message')
+            .transition('fade');
+    });
+
 
     $('#search-btn').click(function (){
         loaddata();
@@ -183,10 +197,10 @@
         loaddata();
     }
     function loaddata(){
-        $('#table-container').load(/*[[@{/admin/blogs/search}*/"/admin/blogs/search",{
+        $('#table-container').load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
             title : $("[name='title']").val(),
             typeId : $("[name='typeId']").val(),
-            recommend : $("[name='recommend']").prop('checked'),
+            recommend : $("[name='recommend']").val(),
             page : $("[name='page']").val(),
         })
     }

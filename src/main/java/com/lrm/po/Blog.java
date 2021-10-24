@@ -13,6 +13,8 @@ public class Blog {
     @GeneratedValue
     private long id;
     private String title;
+    @Basic(fetch=FetchType.LAZY)
+    @Lob
     private String content;
     private String firstPicture;
     private String flag;
@@ -39,6 +41,17 @@ public class Blog {
 
     @OneToMany(mappedBy = "blog")
     List<Comment> comments = new ArrayList<>();
+
+    public String getTabIds() {
+        return tabIds;
+    }
+
+    public void setTabIds(String tabIds) {
+        this.tabIds = tabIds;
+    }
+
+    @Transient
+    private String tabIds;
 
     public Blog() {
     }
