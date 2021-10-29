@@ -108,11 +108,11 @@
                     <th colspan="7">
                         <a href="#" th:href="@{/admin/blogs/input}" class="ui mini left teal floated basic button">新增</a>
                         <div class="ui right floated pagination mini menu" th:if="${page.totalPages}>1">
-                            <a href="#" onclick="page(this)" th:attr="data-page=${page.number}-1" th:unless="${page.first}" class="icon item">
+                            <a onclick="page(this)" th:attr="data-page=${page.number}-1" th:unless="${page.first}" class="icon item">
                                 <i class="left chevron icon"></i>
                             </a>
 
-                            <a href="#" onclick="page(this)" th:attr="data-page=${page.number}+1" th:unless="${page.last}" class="icon item">
+                            <a onclick="page(this)" th:attr="data-page=${page.number}+1" th:unless="${page.last}" class="icon item">
                                 <i class="right chevron icon"></i>
                             </a>
                         </div>
@@ -193,7 +193,7 @@
     })
 
     function page(obj){
-        $("[name='page']").val($(obj).data["page"]);
+        $("[name='page']").val($(obj).data("page"));
         loaddata();
     }
     function loaddata(){

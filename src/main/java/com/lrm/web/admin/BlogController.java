@@ -50,9 +50,20 @@ public class BlogController {
 
     @GetMapping("/blogs/input")
     public String  input(Model model){
+        setTypeAndTag(model);
+        model.addAttribute("blog",new Blog());
+        return INPUT;
+    }
+    private void setTypeAndTag(Model model){
         model.addAttribute("types",typeService.listType());
         model.addAttribute("tags",tagService.listTag());
-        model.addAttribute("blog",new Blog());
+    }
+
+
+    @GetMapping("/blogs/{id}/input")
+    public String  editinput(@PathVariable Long id,Model model){
+        setTypeAndTag(model);
+        model.addAttribute("blog",blogService.getBlog(id));
         return INPUT;
     }
 
