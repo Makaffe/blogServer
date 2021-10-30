@@ -11,7 +11,7 @@ public class Blog {
 
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
     private String title;
     @Basic(fetch=FetchType.LAZY)
     @Lob
@@ -42,25 +42,20 @@ public class Blog {
     @OneToMany(mappedBy = "blog")
     List<Comment> comments = new ArrayList<>();
 
-    public String getTabIds() {
-        return tabIds;
-    }
-
-    public void setTabIds(String tabIds) {
-        this.tabIds = tabIds;
-    }
 
     @Transient
-    private String tabIds;
+    private String tagIds;
+
+    private String description;
 
     public Blog() {
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -193,6 +188,44 @@ public class Blog {
         this.comments = comments;
     }
 
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void init(){
+        this.tagIds = tagsToIds(this.getTags());
+    }
+    //1，2，3
+    private String tagsToIds(List<Tag> tags){
+        if(!tags.isEmpty()){
+            StringBuffer ids = new StringBuffer();
+            boolean flag = false;
+            for(Tag tag : tags){
+                if(flag){
+                    ids.append(",");
+                }else{
+                    flag = true;
+                }
+                ids.append(tag.getId());
+            }
+            return ids.toString();
+        }else{
+            return tagIds;
+        }
+    }
+
     @Override
     public String toString() {
         return "Blog{" +
@@ -209,6 +242,7 @@ public class Blog {
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", description=" + description +
                 '}';
     }
 }

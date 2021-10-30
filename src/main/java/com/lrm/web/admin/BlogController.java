@@ -63,7 +63,9 @@ public class BlogController {
     @GetMapping("/blogs/{id}/input")
     public String  editinput(@PathVariable Long id,Model model){
         setTypeAndTag(model);
-        model.addAttribute("blog",blogService.getBlog(id));
+        Blog blog = blogService.getBlog(id);
+        blog.init();
+        model.addAttribute("blog",blog);
         return INPUT;
     }
 
@@ -72,15 +74,25 @@ public class BlogController {
     public String post(Blog blog, RedirectAttributes attributes, HttpSession session){
         blog.setUser((User)session.getAttribute("user"));
         blog.setType(typeService.getType(blog.getType().getId()));
-        blog.setTags(tagService.listTag(blog.getTabIds()));
-
-        Blog b = blogService.saveBlog(blog);
+        blog.setTags(tagService.listTag(blog.getTagIds()));
+        Blog b;
+        if(blog.getId()==null){
+            b = blogService.saveBlog(blog);
+        }else{
+            b = blogService.updateBlog(blog.getId(),blog);
+        }
         if(b==null){
             attributes.addFlashAttribute("message","操作失败");
 
         }else{
             attributes.addFlashAttribute("message","操作成功");
         }
+        return REDIRECT_LIST;
+    }
+    @GetMapping("/blogs/{id}/delete")
+    public String delete(@PathVariable Long id,RedirectAttributes attributes){
+        blogService.deleteBlog(id);
+        attributes.addFlashAttribute("message","删除成功");
         return REDIRECT_LIST;
     }
 }
