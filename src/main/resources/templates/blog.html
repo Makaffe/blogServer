@@ -114,89 +114,93 @@
                 </div>
             </div>
         </div>
-        <div id="comment-container" class="ui bottom attached segment">
+        <div  class="ui bottom attached segment">
 <!--            留言区域-->
-            <div class="ui teal segment">
-                <div class="ui comments">
-                    <div class="ui threaded comments">
-                        <h3 class="ui dividing header"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">评论</span></span></h3>
-                        <div class="comment">
-                            <a class="avatar">
-                                <img src="https://unsplash.it/100/100?image=1005">
-                            </a>
-                            <div class="content">
-                                <a class="author"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">马特</span></span></a>
-                                <div class="metadata">
-                                    <span class="date"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">今天下午 5:42</span></span></span>
-                                </div>
-                                <div class="text"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
+            <div id="comment-container" class="ui teal segment">
+                <div th:fragment="commentList">
+                    <div class="ui comments">
+                        <div class="ui threaded comments" style="max-width: 100%;">
+                            <h3 class="ui dividing header"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">评论</span></span></h3>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="https://unsplash.it/100/100?image=1005">
+                                </a>
+                                <div class="content">
+                                    <a class="author"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">马特</span></span></a>
+                                    <div class="metadata">
+                                        <span class="date"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">今天下午 5:42</span></span></span>
+                                    </div>
+                                    <div class="text"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
                                     多么艺术！
                                 </span></span></div>
-                                <div class="actions">
-                                    <a class="reply"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></a>
+                                    <div class="actions">
+                                        <a class="reply" data-commentid="1" data-commentnickname="Matt" onclick="reply(this)"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="comment">
-                            <a class="avatar">
-                                <img src="https://unsplash.it/100/100?image=1005">
-                            </a>
-                            <div class="content">
-                                <a class="author">Elliot Fu</a>
-                                <div class="metadata">
-                                    <span class="date"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">昨天中午 12:30</span></span></span>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="https://unsplash.it/100/100?image=1005">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Elliot Fu</a>
+                                    <div class="metadata">
+                                        <span class="date"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">昨天中午 12:30</span></span></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">这对我的研究非常有用。</span><span style="vertical-align: inherit;">也谢谢！</span></span></p>
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></a>
+                                    </div>
                                 </div>
-                                <div class="text">
-                                    <p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">这对我的研究非常有用。</span><span style="vertical-align: inherit;">也谢谢！</span></span></p>
-                                </div>
-                                <div class="actions">
-                                    <a class="reply"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></a>
-                                </div>
-                            </div>
-                            <div class="comments">
-                                <div class="comment">
-                                    <a class="avatar">
-                                        <img src="https://unsplash.it/100/100?image=1005">
-                                    </a>
-                                    <div class="content">
-                                        <a class="author"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">珍妮·赫斯</span></span></a>
-                                        <div class="metadata">
-                                            <span class="date"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">现在</span></span></span>
-                                        </div>
-                                        <div class="text"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
+                                <div class="comments">
+                                    <div class="comment">
+                                        <a class="avatar">
+                                            <img src="https://unsplash.it/100/100?image=1005">
+                                        </a>
+                                        <div class="content">
+                                            <a class="author"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">珍妮·赫斯</span></span></a>
+                                            <div class="metadata">
+                                                <span class="date"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">现在</span></span></span>
+                                            </div>
+                                            <div class="text"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
                                             埃利奥特你总是对的 :)
                                         </span></span></div>
-                                        <div class="actions">
-                                            <a class="reply"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></a>
+                                            <div class="actions">
+                                                <a class="reply"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="comment">
-                            <a class="avatar">
-                                <img src="https://unsplash.it/100/100?image=1005">
-                            </a>
-                            <div class="content">
-                                <a class="author"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">乔·亨德森</span></span></a>
-                                <div class="metadata">
-                                    <span class="date"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5天前</span></span></span>
-                                </div>
-                                <div class="text"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="https://unsplash.it/100/100?image=1005">
+                                </a>
+                                <div class="content">
+                                    <a class="author"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">乔·亨德森</span></span></a>
+                                    <div class="metadata">
+                                        <span class="date"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">5天前</span></span></span>
+                                    </div>
+                                    <div class="text"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">
                                     伙计，这太棒了。</span><span style="vertical-align: inherit;">非常感谢
                                 </span></span></div>
-                                <div class="actions">
-                                    <a class="reply"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></a>
+                                    <div class="actions">
+                                        <a class="reply"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">回复</span></span></a>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
 
                 </div>
             </div>
-            <div class="ui form">
-
+            <div id="comment-form" class="ui form">
+                <input type="hidden" name="blog.id" th:value="${blog.id}" >                <input type="text" name="blog.id" th:value="${blog.id}" >
+                <input type="hidden" name="parentComment.id" value="-1" >
                 <div class="field">
                     <textarea name="content" placeholder="请输入评论信息..."></textarea>
                 </div>
@@ -216,7 +220,7 @@
                     </div>
 
                     <div class="field m-mobile-wide m-margin-bottom-small">
-                        <button class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
+                        <button id="contentpost-btn" type="button" class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
                     </div>
                 </div>
             </div>
@@ -325,8 +329,7 @@
     });
 
     var serurl = "127.0.0.1:8080"
-    var url = /*[[@{/blog/{id}(id=${blog.id}})}]]*/"";
-
+    var url = "";
     var qrcode = new QRCode("qrcode", {
         text: serurl+url,
         width: 110,
@@ -351,6 +354,71 @@
             console.log('Scrolled to waypoint!'+direction)
         }
     })
+    $('#contentpost-btn').click(function(){
+       var boo = $('.ui.form').form('validate form');
+       if(boo){
+           console.log('校验成功');
+       }else{
+           console.log('校验失败');
+       }
+    });
+
+    function postData(){
+        $('#content-container').load(/*[[@{/comments}]]*/"",{
+            "parentComment.id":$("*[name='parentComment.id']").val(),
+            "blog.id":$("[name='blog.id']").val(),
+            "nickname":$("[name='nickname']").val(),
+            "email":$("[name='email']").val(),
+            "content":$("[name='content']").val(),
+
+        },function (responseTxt,statusTxt,xhr){
+            $(window).scrollTo($('#content-container'),500);
+            clearContent();
+        });
+    }
+    function clearContent(){
+        $("[name='content']").val('');
+        $("*[name='parentComment.id']").val(-1);
+        $("[name='content']").attr("请输入评论信息...");
+
+    }
+
+    function reply(obj){
+        var commentId = $(obj).data('commentid');
+        var commentNickname = $(obj).data('commentnickname');
+        $("[name='content']").attr("placeholder","@"+commentNickname).focus();
+        $("[name='parentComment.id']").val(commentId);
+        $(window).scrollTo($('#comment-form'),500);
+
+    }
+
+    $('.ui.form').form({
+        fields:{
+            title:{
+                identifier: 'content',
+                rules: [{
+                    type:'empty',
+                    prompt:'请输入评论内容'
+                }]
+            },
+            content: {
+                identifier: 'nickname',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入你的大名'
+                }]
+            },
+            type: {
+                identifier: 'email',
+                rules: [{
+                    type: 'email',
+                    prompt: '请输入正确的邮箱地址',
+                }]
+            }
+        }
+    })
+
+
 </script>
 
 

@@ -14,6 +14,7 @@ public class Comment {
     private String nickname;
     private String email;
     private String content;
+    private String avatar;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
 
@@ -93,6 +94,14 @@ public class Comment {
         this.parentComment = parentComment;
     }
 
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
     @Override
     public String toString() {
         return "Comment{" +
@@ -100,7 +109,11 @@ public class Comment {
                 ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +
                 ", content='" + content + '\'' +
+                ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
+                ", blog=" + blog +
+                ", replyComments=" + replyComments +
+                ", parentComment=" + parentComment +
                 '}';
     }
 }
